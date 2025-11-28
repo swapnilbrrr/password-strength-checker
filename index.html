@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Password Strength Checker</h1>
+            <p>A tool to assess password security in real-time.</p>
+        </header>
+
+        <main>
+            <div class="password-card">
+                <div class="password-input-section">
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                
+                <div id="strength-meter-container">
+                    <div id="strength-meter"></div>
+                </div>
+                <div id="feedback"></div>
+                <div id="ai-suggestion"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Swapnil Katuwal</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/validator.js"></script>
+    <script type="module" src="js/ui.js"></script>
+</body>
+</html>
