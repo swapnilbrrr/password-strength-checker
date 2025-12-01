@@ -110,7 +110,7 @@ password-strength-checker/
 ---
 
 <div align="center">
-  **Swapnil Katuwal** – Aspiring SOC Analyst & Security Enthusiast
+  Swapnil Katuwal – Aspiring SOC Analyst & Security Enthusiast
   <br>
   <a href="https://www.linkedin.com/in/swapnil-katuwal-bb7529309/">LinkedIn</a> | <a href="https://github.com/swapnilbrrr">GitHub</a>
 </div>
