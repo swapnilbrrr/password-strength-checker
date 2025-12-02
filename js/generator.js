@@ -1,20 +1,11 @@
 import { passwordPolicy } from './policy.js';
 
-/**
- * Generates a cryptographically secure random number within a given range.
- * @param {number} max - The exclusive maximum value.
- * @returns {number} A random integer between 0 and max - 1.
- */
 function getRandomCrypto(max) {
     const randomValues = new Uint32Array(1);
     window.crypto.getRandomValues(randomValues);
     return randomValues[0] % max;
 }
 
-/**
- * Shuffles an array in place using the Fisher-Yates algorithm.
- * @param {Array} array - The array to shuffle.
- */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = getRandomCrypto(i + 1);
@@ -31,7 +22,6 @@ export function generateSecurePassword() {
     const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lower = "abcdefghijklmnopqrstuvwxyz";
     const numbers = "0123456789";
-    // Using a more comprehensive symbol set
     const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?";
 
     let charSet = "";
@@ -67,7 +57,6 @@ export function generateSecurePassword() {
         passwordArray.push(charSet[randomIndex]);
     }
 
-    // Shuffle the array to ensure guaranteed characters are not always at the start
     shuffleArray(passwordArray);
 
     return passwordArray.join('');
