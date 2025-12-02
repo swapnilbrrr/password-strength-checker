@@ -1,7 +1,3 @@
-/**
- * AI-Powered Password Suggestion Engine.
- * Analyzes a password and provides a comprehensive list of suggestions for improvement.
- */
 export function getAISuggestion(password, policy) {
     if (!password) return "";
 
@@ -37,9 +33,6 @@ export function getAISuggestion(password, policy) {
     return "Suggestions: " + suggestions.join(" ");
 }
 
-/**
- * Helper function to detect sequences.
- */
 function hasSequence(password) {
     for (let i = 0; i < password.length - 2; i++) {
         const c1 = password.charCodeAt(i);
