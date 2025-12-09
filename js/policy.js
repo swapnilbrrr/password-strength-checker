@@ -1,10 +1,3 @@
-/**
- * Password Security Policy
- *
- * This file defines the rules for a strong password, aligned with modern security practices.
- * The validator uses this policy to check password strength and the AI suggests improvements based on it.
- */
-
 export const passwordPolicy = {
     minLength: 12,
     requireUppercase: true,
